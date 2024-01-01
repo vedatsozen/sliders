@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER BY Vedat Sözen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="slidercontainer">
+    <div id="slider">
+        <div id="slide1" class="slide">
+            <h1>SLIDE 1</h1>
+            <p id="click1" class="click">Click to see slide 1 explanation</p>
+            <p id="explanation1" class="explanation">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nunc dictum, auctor diam non, iaculis est. Nunc id ipsum imperdiet, cursus metus vulputate, luctus augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eget erat diam. Nullam pharetra mollis ante, ac fermentum eros facilisis ac. Nunc rhoncus, velit at convallis venenatis, sem mi ultricies nulla, ut accumsan turpis velit in ipsum. Ut venenatis mauris vel dapibus scelerisque. Phasellus scelerisque nulla non augue feugiat scelerisque. Fusce facilisis nunc diam, nec laoreet dui fermentum at. Vestibulum mi arcu, sollicitudin eu urna sed, placerat sodales libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tincidunt, dui at ullamcorper sagittis, augue ex fringilla erat, sed aliquam nibh metus vulputate risus. Vestibulum tincidunt nunc vel quam viverra, vel vulputate urna porttitor. Pellentesque ipsum mauris, mattis non venenatis vitae, vulputate et erat. Fusce congue egestas dui, ac vehicula nulla cursus eget.
+            </p>
+        </div>
+        <div id="slide2" class="slide">
+            <h1>SLIDE 2</h1>
+            <p id="click2" class="click">Click to see slide 2 explanation</p>
+            <p id="explanation2" class="explanation">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nunc dictum, auctor diam non, iaculis est. Nunc id ipsum imperdiet, cursus metus vulputate, luctus augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eget erat diam. Nullam pharetra mollis ante, ac fermentum eros facilisis ac. Nunc rhoncus, velit at convallis venenatis, sem mi ultricies nulla, ut accumsan turpis velit in ipsum. Ut venenatis mauris vel dapibus scelerisque. Phasellus scelerisque nulla non augue feugiat scelerisque. Fusce facilisis nunc diam, nec laoreet dui fermentum at. Vestibulum mi arcu, sollicitudin eu urna sed, placerat sodales libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tincidunt, dui at ullamcorper sagittis, augue ex fringilla erat, sed aliquam nibh metus vulputate risus. Vestibulum tincidunt nunc vel quam viverra, vel vulputate urna porttitor. Pellentesque ipsum mauris, mattis non venenatis vitae, vulputate et erat. Fusce congue egestas dui, ac vehicula nulla cursus eget.
+            </p>
+        </div>
+        <div id="slide3" class="slide">
+            <h1>SLIDE 3</h1>
+            <p id="click3" class="click">Click to see slide 2 explanation</p>
+            <p id="explanation3" class="explanation">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nunc dictum, auctor diam non, iaculis est. Nunc id ipsum imperdiet, cursus metus vulputate, luctus augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eget erat diam. Nullam pharetra mollis ante, ac fermentum eros facilisis ac. Nunc rhoncus, velit at convallis venenatis, sem mi ultricies nulla, ut accumsan turpis velit in ipsum. Ut venenatis mauris vel dapibus scelerisque. Phasellus scelerisque nulla non augue feugiat scelerisque. Fusce facilisis nunc diam, nec laoreet dui fermentum at. Vestibulum mi arcu, sollicitudin eu urna sed, placerat sodales libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tincidunt, dui at ullamcorper sagittis, augue ex fringilla erat, sed aliquam nibh metus vulputate risus. Vestibulum tincidunt nunc vel quam viverra, vel vulputate urna porttitor. Pellentesque ipsum mauris, mattis non venenatis vitae, vulputate et erat. Fusce congue egestas dui, ac vehicula nulla cursus eget.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="butonlar">
+    <button id="btn1" class="btn">1</button>
+    <button id="btn2" class="btn">2</button>
+    <button id="btn3" class="btn">3</button>
+</div>
+
+</body>
+
+<script>
+
+let transition = "1000ms";
+
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+
+let slide1 = document.getElementById("slide1");
+let slide2 = document.getElementById("slide2");
+let slide3 = document.getElementById("slide3");
+
+let slider = document.getElementById("slider");
+
+btn1.addEventListener("click", function() {
+
+slider.style.left = "0";
+slider.style.transition = transition ;
+
+})
+
+btn2.addEventListener("click", function() {
+
+slider.style.left = "-100vw";
+slider.style.transition = transition ;
+
+})
+
+btn3.addEventListener("click", function() {
+
+slider.style.left = "-200vw";
+slider.style.transition = transition ;
+
+})
+
+let click1 = document.getElementById("click1");
+let explanation1 = document.getElementById("explanation1");
+
+let click2 = document.getElementById("click2");
+let explanation2 = document.getElementById("explanation2");
+
+let click3 = document.getElementById("click3");
+let explanation3 = document.getElementById("explanation3");
+
+click1.addEventListener("click", function() {
+explanation1.classList.toggle("visible");
+})
+
+click2.addEventListener("click", function() {
+explanation2.classList.toggle("visible");
+})
+
+click3.addEventListener("click", function() {
+explanation3.classList.toggle("visible");
+})
+
+
+</script>
+
+</html>

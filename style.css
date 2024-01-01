@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#slidercontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width:100vw;
+    transform: translate(-50%,-50%);
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+#slider {
+    position: absolute;
+    height: 100%;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    height: 100%;
+    width: 100vw;
+    
+}
+
+#slide1 {
+    background:url("images/slide1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#slide2 {
+    background:url("images/slide2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#slide3 {
+    background:url("images/slide3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.slide > h1 {
+    margin: auto;
+    margin-top: 200px;
+    font-size:70px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.slide > p.click {
+    font-size:20px;
+    letter-spacing: 4px;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    margin: auto;
+    margin-top:5px;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.slide > p.click:hover {
+    cursor: pointer;
+    background-color: black; 
+}
+
+p.explanation {
+    margin: auto;
+    margin-top: 15px;
+    height: 200px;
+    width:1000px;
+    border: 2px solid white;
+    font-size: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#explanation1.visible {
+    visibility: visible;
+}
+
+#explanation2.visible {
+    visibility: visible;
+}
+
+#explanation3.visible {
+    visibility: visible;
+}
+
+div#butonlar {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 5px;
+    left:5px;
+    gap: 20px;
+    border: 2px solid grey;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+button.btn {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+button.btn:hover {
+    background-color: grey;
+    transition: 300ms ease;
+}
